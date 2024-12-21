@@ -1,0 +1,91 @@
+
+        /* General styles for the entire page */
+        body {
+            font-family: Arial, sans-serif; /* Sets the font family for the page */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+            background-color: #f4f4f9; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Dark background for the header */
+            color: #fff; /* White text for contrast */
+            padding: 20px 0; /* Adds space above and below the header content */
+            text-align: center; /* Centers the text in the header */
+        }
+
+        header h1 {
+            margin: 0; /* Removes default margin */
+        }
+
+        /* Section container styles */
+        section {
+            max-width: 800px; /* Limits the width of content for readability */
+            margin: 20px auto; /* Centers the section horizontally and adds vertical spacing */
+            padding: 20px; /* Adds padding inside the section */
+            background-color: #fff; /* White background for contrast */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+            border-radius: 8px; /* Rounded corners for aesthetic */
+        }
+
+        section h2 {
+            border-bottom: 2px solid #333; /* Adds a line below the heading */
+            padding-bottom: 10px; /* Space between text and the border */
+        }
+
+        /* Badge styles for skills */
+        .badge {
+            background-color: black; /* Blue background for badges */
+            color: white; /* White text for contrast */
+            padding: 5px 10px; /* Padding inside the badge */
+            border-radius: 15px; /* Rounded edges for badges */
+            margin: 5px; /* Spacing between badges */
+            display: inline-block; /* Inline-block to keep badges aligned */
+        }
+
+        /* Contact information styles */
+        .contact {
+            text-align: center; /* Centers the text */
+        }
+
+        .contact a {
+            text-decoration: none; /* Removes underline from links */
+            color: #0073e6; /* Blue color for links */
+        }
+
+        .contact a:hover {
+            text-decoration: underline; /* Adds underline on hover for clarity */
+        }
+
+        /* Highlighted text style */
+        .highlight {
+            color: #0073e6; /* Distinctive blue for emphasis */
+            font-weight: bold; /* Bold text for importance */
+        }
+
+        /* Divider line style */
+        hr {
+            border: 1px solid #ddd; /* Light gray line */
+            margin: 20px 0; /* Adds space around the line */
+        }
+
+        /* Link hover effect */
+        a:hover {
+            color: #ff5722; /* Changes color to orange on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Subheading styles */
+        h3 {
+            font-size: 1.5em; /* Larger font for subheadings */
+            font-weight: bold; /* Bold text */
+            color: #333; /* Dark gray for subheadings */
+        }
+
+        /* Icon styles */
+        .icon {
+            margin-right: 8px; /* Adds space between icon and text */
+            color: #0073e6; /* Matches highlight color */
+        }
