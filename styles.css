@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 50px; /* Prevent content overlap with fixed menu */
+    padding-top: 70px; /* Adjusted for potential menu height */
     background-color: #f4f4f9;
     color: #333;
 }
