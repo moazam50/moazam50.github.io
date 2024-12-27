@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <title>Moazam Ali - Portfolio</title>
 </head>
 <body>
+
+<!-- Navigation Menu -->
+<nav>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <!-- Header Section -->
 <header>
@@ -26,60 +37,38 @@
 <!-- Skills Section -->
 <section>
     <h2>Skills</h2>
-    <div>
-        <span class="badge">Python</span>
-        <span class="badge">Cyber Security</span>
-        <span class="badge">HTML</span>
-        <span class="badge">CSS</span>
-        <span class="badge">Azure</span>
-        <span class="badge">AWS</span>
-        <span class="badge">Snort</span>
-        <span class="badge">Suricata</span>
-        <span class="badge">OWASP Scan</span>
-        <span class="badge">CCNA</span>
-        <span class="badge">CCNP</span>
-        <span class="badge">VMware</span>
-        <span class="badge">Docker</span>
+    <div class="skills">
+        <table class="skills-table">
+            <tr>
+                <td><i class="fab fa-python"></i> Python</td>
+                <td><i class="fab fa-js"></i> JavaScript</td>
+                <td><i class="fas fa-shield-alt"></i> Cyber Security</td>
+                <td><i class="fab fa-html5"></i> HTML</td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-css3-alt"></i> CSS</td>
+                <td><i class="fab fa-microsoft"></i> Azure</td>
+                <td><i class="fab fa-aws"></i> AWS</td>
+                <td><i class="fas fa-network-wired"></i> Snort</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-network-wired"></i> Suricata</td>
+                <td><i class="fas fa-bug"></i> OWASP Scan</td>
+                <td><i class="fas fa-network-wired"></i> CCNA</td>
+                <td><i class="fas fa-network-wired"></i> CCNP</td>
+            </tr>
+            <tr>
+                <td><i class="fas fa-cloud"></i> VMware</td>
+                <td><i class="fab fa-docker"></i> Docker</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
 </section>
 
-<!-- Certifications Section -->
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li><span class="icon">&#10003;</span><a href="https://learn.microsoft.com/en-us/users/moazamali-7653/transcript/d4yzzsj1xz3rjze?source=docs" target="_blank">Microsoft Azure Fundamentals (AZ-900)</a></li>
-        <li><span class="icon">&#10003;</span><a href="https://coursera.org/share/c5b913513f2273125be1d5d618d36b23" target="_blank">Cyber Threat Intelligence</a></li>
-        <li><span class="icon">&#10003;</span><a href="https://coursera.org/share/2e87a2de33a8a1776853a1ad9bda96da" target="_blank">Penetration Testing, Incident Response, and Forensics</a></li>
-    </ul>
-</section>
-
-<!-- Projects Section -->
-<section>
-    <h2>Projects</h2>
-    
-    <h3><span class="highlight">Custom Discord Bot</span></h3>
-    <p><strong>Technologies Used:</strong> Python, discord.py, Discord API</p>
-    <p>Developed a Discord bot with automatic replies, custom commands, and user interaction capabilities. Successfully demonstrated integration of Python with the Discord API for communication automation. Used a Discord token and the Discord library in Python to handle bot authentication and interactions.</p>
-    <p><strong>Source Code:</strong> <a href="https://github.com/moazam50/moazam50.github.io/blob/main/bot.py" target="_blank">View the source code on GitHub</a></p>
-    
-    <hr>
-
-    <h3><span class="highlight">Snort vs. Suricata IDS Comparison</span></h3>
-    <p><strong>Technologies Used:</strong> Snort, Suricata, Traffic Generators, Wireshark, Virtual Machines</p>
-    <p>This project involved a detailed comparison between Snort and Suricata to evaluate their performance, detection capabilities, and resource usage under different attack scenarios. The goal was to determine which IDS performs better in real-world network environments.</p>
-    <ul>
-        <li><strong>Detection Accuracy:</strong> Both systems detected known attacks effectively, with Suricata excelling in complex environments.</li>
-        <li><strong>Performance:</strong> Suricata showed better scalability and handled high-speed traffic more effectively than Snort.</li>
-        <li><strong>Ease of Use:</strong> Snort was easier to configure for basic setups, while Suricata required more advanced configuration for optimal performance.</li>
-        <li><strong>False Positives/Negatives:</strong> Suricata had fewer false negatives, making it more reliable for complex attacks.</li>
-        <li><strong>Scalability:</strong> Suricata demonstrated superior scalability, especially in large, high-traffic networks.</li>
-    </ul>
-    <p><strong>Conclusion:</strong> Suricata is better suited for large-scale, high-traffic environments, while Snort is effective for smaller, less complex networks.</p>
-    <p><strong>Future Work:</strong> Explore integrating Snort and Suricata in a hybrid IDS solution and investigate the use of machine learning for enhanced detection capabilities.</p>
-</section>
-
 <!-- Contact Section -->
-<section>
+<section id="contact">
     <h2>Contact</h2>
     <div class="contact">
         <p><strong>Email:</strong> <a href="mailto:moazamali2656@gmail.com">moazamali2656@gmail.com</a></p>

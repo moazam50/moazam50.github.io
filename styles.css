@@ -1,91 +1,158 @@
+/* General styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* Prevent content overlap with fixed menu */
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-        /* General styles for the entire page */
-        body {
-            font-family: Arial, sans-serif; /* Sets the font family for the page */
-            margin: 0; /* Removes default margin */
-            padding: 0; /* Removes default padding */
-            background-color: #f4f4f9; /* Light gray background */
-            color: #333; /* Dark gray text color */
-        }
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        /* Header styles */
-        header {
-            background-color: #333; /* Dark background for the header */
-            color: #fff; /* White text for contrast */
-            padding: 20px 0; /* Adds space above and below the header content */
-            text-align: center; /* Centers the text in the header */
-        }
+header h1 {
+    margin: 0;
+}
 
-        header h1 {
-            margin: 0; /* Removes default margin */
-        }
+/* Section container styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
-        /* Section container styles */
-        section {
-            max-width: 800px; /* Limits the width of content for readability */
-            margin: 20px auto; /* Centers the section horizontally and adds vertical spacing */
-            padding: 20px; /* Adds padding inside the section */
-            background-color: #fff; /* White background for contrast */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
-            border-radius: 8px; /* Rounded corners for aesthetic */
-        }
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
 
-        section h2 {
-            border-bottom: 2px solid #333; /* Adds a line below the heading */
-            padding-bottom: 10px; /* Space between text and the border */
-        }
+/* Badge styles for skills */
+.badge {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+    display: inline-block;
+}
 
-        /* Badge styles for skills */
-        .badge {
-            background-color: black; /* Blue background for badges */
-            color: white; /* White text for contrast */
-            padding: 5px 10px; /* Padding inside the badge */
-            border-radius: 15px; /* Rounded edges for badges */
-            margin: 5px; /* Spacing between badges */
-            display: inline-block; /* Inline-block to keep badges aligned */
-        }
+/* Contact information styles */
+.contact {
+    text-align: center;
+}
 
-        /* Contact information styles */
-        .contact {
-            text-align: center; /* Centers the text */
-        }
+.contact a {
+    text-decoration: none;
+    color: #0073e6;
+}
 
-        .contact a {
-            text-decoration: none; /* Removes underline from links */
-            color: #0073e6; /* Blue color for links */
-        }
+.contact a:hover {
+    text-decoration: underline;
+}
 
-        .contact a:hover {
-            text-decoration: underline; /* Adds underline on hover for clarity */
-        }
+/* Highlighted text style */
+.highlight {
+    color: darkgray; /* Fixed typo in color name */
+    font-weight: bold;
+}
 
-        /* Highlighted text style */
-        .highlight {
-            color: #0073e6; /* Distinctive blue for emphasis */
-            font-weight: bold; /* Bold text for importance */
-        }
+/* Divider line style */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
 
-        /* Divider line style */
-        hr {
-            border: 1px solid #ddd; /* Light gray line */
-            margin: 20px 0; /* Adds space around the line */
-        }
+/* Link hover effect */
+a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
 
-        /* Link hover effect */
-        a:hover {
-            color: #ff5722; /* Changes color to orange on hover */
-            text-decoration: underline; /* Underline on hover */
-        }
+/* Subheading styles */
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
 
-        /* Subheading styles */
-        h3 {
-            font-size: 1.5em; /* Larger font for subheadings */
-            font-weight: bold; /* Bold text */
-            color: #333; /* Dark gray for subheadings */
-        }
+/* Icon styles */
+.icon {
+    margin-right: 8px;
+    color: #0073e6;
+}
 
-        /* Icon styles */
-        .icon {
-            margin-right: 8px; /* Adds space between icon and text */
-            color: #0073e6; /* Matches highlight color */
-        }
+/* Skills table styles */
+.skills-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.skills-table td {
+    padding: 15px;
+    font-size: 18px;
+    vertical-align: middle;
+    border: none;
+}
+
+.skills-table i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .skills-table {
+        width: 100%;
+    }
+
+    .skills-table td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .skills-table i {
+        font-size: 20px;
+    }
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #ff5722;
+}
